@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, div, h1, h2 ,h3,h4,h6,span {
+
+  font-family: 'Roboto', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-light .navbar-brand {
+  color:orange!important;
+  font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 700;
+  transition: all ease-in-out .5s;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  border-top: 0;
+overflow: hidden;
+position: relative;
+text-transform: uppercase;
+
+}
+.navbar-light .navbar-nav {
+  position: relative;
+}
+.navbar-light .navbar-nav .nav-link:after {
+  display: block;
+  content: ' ';
+  width: 0;
+  height: .02rem;
+ background-color: white;
+ position: absolute;
+ transition: width ease-in-out .5s;
+ overflow: hidden;
+
+
+}
+.navbar-light .navbar-nav .nav-link:hover:after {
+width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+li  {
+  overflow: hidden;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color:orange!important;
+
+}
+.navbar-expand-lg .navbar-collapse {
+  flex-grow: 0!important;
+}
+
+.navbar-expand-lg {
+  padding: 1.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: orange!important;
 }

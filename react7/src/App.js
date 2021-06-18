@@ -1,13 +1,15 @@
+import React from 'react';
 
+import  Navbar  from './Components/Navbar';
 
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
+
+
   return (
     <div className="App">
-<div className="alert alert-primary" role="alert">
-  A simple primary alert—check it out!
-</div>
+      <Navbar />
+
 </div>
   );
 }
